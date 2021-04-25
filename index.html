@@ -8,10 +8,23 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
+    <div>
         <h1>Weather Dashboard</h1>
-    </header>
+    </div>
+    <div>
+        <div class="container">
+            <div class="clearfix">
+                <div class="col-4 float-left">
+                    <nav class="navbar navbar-light bg-light shadow-lg p-3 mb-5 bg-white rounded">
+                        <h4>Search for a City:</h4>
+                            <form class="form-inline">
+                                <input id="city-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button id="select-city" class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+    </div>
     <div>Search For a City</div>
     
 </body>
+<script src="assets/script.js"></script>
+<script async def src="https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={d1635fbaa122518ba37230c95af37abc}" type="text/javascript"></script>
 </html>
